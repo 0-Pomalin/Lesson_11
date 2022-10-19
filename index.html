@@ -24,21 +24,24 @@
                 <a class="menu__link" href="">Приклади позиціонування</a>
                 <ul class="sub-menu">
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="">Підпункт меню</a>
+                    <a class="sub-menu__link" href="#static">: static</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="">Підпункт меню</a>
+                    <a class="sub-menu__link" href="#relative">: relative</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="">Підпункт меню</a>
+                    <a class="sub-menu__link" href="#absolute">: absolute</a>
                   </li>
                   <li class="sub-menu__item">
-                    <a class="sub-menu__link" href="">Підпункт меню</a>
+                    <a class="sub-menu__link" href="#fixed">: fixed</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__link" href="#sticky">: sticky</a>
                   </li>
                 </ul>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Поле бою</a>
+                <a class="menu__link" href="#battlefield">Поле бою</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">Контакти</a>
@@ -50,32 +53,32 @@
       <main>
         <section class="examples">
           <div class="examples__container">
-            <div class="examples__items static">
+            <div id="static" class="examples__items static">
               <h2 class="static__title title">Властивість position: static</h2>
               <div class="static__block static__block--bg-yellow">BLOCK 1</div>
               <div class="static__block static__block--bg-blue">BLOCK 2</div>
               <div class="static__block static__block--bg-tomato">BLOCK 3</div>
             </div>
 
-            <div class="examples__items relative">
+            <div id="relative" class="examples__items relative">
               <h2 class="relative__title title">Властивість position: relative</h2>
               <div class="relative__block relative__block--bg-orangered">BLOCK 1</div>
               <div class="relative__block relative__block--bg-green">BLOCK 2</div>
               <div class="relative__block relative__block--bg-violet">BLOCK 3</div>
             </div>
 
-            <div class="examples__items absolute">
+            <div id="absolute" class="examples__items absolute">
               <h2 class="absolute__title title">Властивість position: absolute</h2>
               <div class="absolute__block absolute__block--bg-purple">BLOCK 1</div>
               <div class="absolute__block absolute__block--bg-pink">BLOCK 2</div>
               <div class="absolute__block absolute__block--bg-bisque">BLOCK 3</div>
             </div>
 
-            <div class="examples__items fixed">
+            <div id="fixed" class="examples__items fixed">
               <div class="fixed__block">Привіт! я fixed</div>
             </div>
 
-            <div class="examples__items sticky">
+            <div id="sticky" class="examples__items sticky">
               <h2 class="sticky__title title">Властивість position: sticky</h2>
               <div class="sticky__block sticky__block--bg-chocolate">
                 BLOCK 1 -- Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus reiciendis voluptate
@@ -96,18 +99,37 @@
           </div>
         </section>
 
-        <section class="battlefield">
+        <section id="battlefield" class="battlefield">
           <div class="battlefield__container">
-            <div class="battlefield__background">
-              <img src="./img/battlefield.jpg" alt="Поле бою" />
-            </div>
-            <div class="battlefield__tank">
+            <!-- <div class="battlefield__tank">
               <img src="./img/tank.png" alt="" />
+            </div> -->
+            <h2 class="battlefield_title title">Поле бою</h2>
+            <div class="battlefield__background"><img src="./img/battlefield.jpg" alt="Поле бою" width="1200" /></div>
+            <div class="tank">
+              <div class="tank__muzzle">
+                <img src="./img/muzzle.png" alt="дуло танка" />
+              </div>
+              <div class="tank__head">
+                <img src="./img/head.png" alt="башта танка" />
+              </div>
+              <div class="tank__tank-hull">
+                <img src="./img/tank-hull.png" alt="корпус танка" />
+              </div>
+              <div class="tank__left-track">
+                <img src="./img/left-track.png" alt="ліва гусениця танка" />
+              </div>
+              <div class="tank__right-track">
+                <img src="./img/right-track.png" alt="права гусениця танка" />
+              </div>
+              <div class="flag">
+                <img src="./img/flag.png" alt="" />
+              </div>
             </div>
           </div>
         </section>
       </main>
-      <footer></footer>
+      <footer class="page-footer"></footer>
     </div>
   </body>
 </html>

@@ -214,6 +214,10 @@ body {
   right: 10px;
 }
 
+.examples {
+  margin-bottom: 100px;
+}
+
 /* fixed */
 
 .fixed {
@@ -234,21 +238,6 @@ body {
   z-index: 1;
 }
 
-/* section */
-
-.battlefield {
-  position: relative;
-  z-index: 50;
-}
-
-.battlefield__background img {
-  max-width: 100%;
-}
-
-.battlefield__tank img {
-  max-width: 50%;
-}
-
 /* sticky */
 
 .sticky {
@@ -267,4 +256,84 @@ body {
 }
 .sticky__block--bg-grey {
   background-color: grey;
+}
+
+/* section battlefield*/
+
+.battlefield {
+  position: relative;
+  z-index: 50;
+}
+
+.battlefield__background img {
+  position: relative;
+  /* max-width: 100%; */
+}
+
+.battlefield__tank img {
+  max-width: 50%;
+}
+
+.tank {
+  position: relative;
+}
+
+.tank img {
+  width: 40%;
+}
+
+.tank__muzzle {
+  position: absolute;
+  bottom: 133px;
+  left: 225px;
+  z-index: 7;
+}
+
+.tank__head {
+  position: absolute;
+  bottom: 203px;
+  left: 342px;
+  z-index: 6;
+}
+
+.tank__tank-hull {
+  position: absolute;
+  bottom: 63px;
+  left: 395px;
+}
+
+.tank__left-track {
+  position: absolute;
+  bottom: 8px;
+  left: 255px;
+  z-index: 5;
+}
+
+.tank__right-track {
+  position: absolute;
+  bottom: 35px;
+  left: 567px;
+  z-index: 4;
+}
+
+.flag {
+  position: relative;
+}
+
+.flag img {
+  width: 55px;
+
+  position: absolute;
+  bottom: 375px;
+  right: 120px;
+}
+
+.battlefield {
+  margin-bottom: 100px;
+}
+
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
 }
