@@ -14,63 +14,100 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__container">
-        <nav class="page-header__nav">
-          <a class="logo" href="./index.html" lang="en"
-            >Ol P<span class="logo logo--black">Web</span></a
-          >
-          <ul class="page-header__menu menu">
-            <li class="menu__item">
-              <a class="menu__link" href="">Приклади позиціонування</a>
-              <ul class="sub-menu">
-                <li class="sub-menu__item">
-                  <a class="sub-menu__link" href="">Підпункт меню</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a class="sub-menu__link" href="">Підпункт меню</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a class="sub-menu__link" href="">Підпункт меню</a>
-                </li>
-                <li class="sub-menu__item">
-                  <a class="sub-menu__link" href="">Підпункт меню</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Поле бою</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="examples">
-        <div class="examples__container">
-          <div class="examples__items static">
-            <h2 class="static__title title">Властивість position: static</h2>
-            <div class="static__block static__block--bg-yellow">BLOCK 1</div>
-            <div class="static__block static__block--bg-blue">BLOCK 2</div>
-            <div class="static__block static__block--bg-tomato">BLOCK 3</div>
-          </div>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="page-header__container">
+          <nav class="page-header__nav">
+            <a class="logo" href="./index.html" lang="en">Ol P<span class="logo logo--black">Web</span></a>
+            <ul class="page-header__menu menu">
+              <li class="menu__item">
+                <a class="menu__link" href="">Приклади позиціонування</a>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__link" href="">Підпункт меню</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__link" href="">Підпункт меню</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__link" href="">Підпункт меню</a>
+                  </li>
+                  <li class="sub-menu__item">
+                    <a class="sub-menu__link" href="">Підпункт меню</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Поле бою</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </section>
+      </header>
+      <main>
+        <section class="examples">
+          <div class="examples__container">
+            <div class="examples__items static">
+              <h2 class="static__title title">Властивість position: static</h2>
+              <div class="static__block static__block--bg-yellow">BLOCK 1</div>
+              <div class="static__block static__block--bg-blue">BLOCK 2</div>
+              <div class="static__block static__block--bg-tomato">BLOCK 3</div>
+            </div>
 
-      <section class="battlefield">
-        <div class="battlefield__container">
-          <div class="battlefield__background">
-            <img src="./img/battlefield.jpg" alt="Поле бою" />
+            <div class="examples__items relative">
+              <h2 class="relative__title title">Властивість position: relative</h2>
+              <div class="relative__block relative__block--bg-orangered">BLOCK 1</div>
+              <div class="relative__block relative__block--bg-green">BLOCK 2</div>
+              <div class="relative__block relative__block--bg-violet">BLOCK 3</div>
+            </div>
+
+            <div class="examples__items absolute">
+              <h2 class="absolute__title title">Властивість position: absolute</h2>
+              <div class="absolute__block absolute__block--bg-purple">BLOCK 1</div>
+              <div class="absolute__block absolute__block--bg-pink">BLOCK 2</div>
+              <div class="absolute__block absolute__block--bg-bisque">BLOCK 3</div>
+            </div>
+
+            <div class="examples__items fixed">
+              <div class="fixed__block">Привіт! я fixed</div>
+            </div>
+
+            <div class="examples__items sticky">
+              <h2 class="sticky__title title">Властивість position: sticky</h2>
+              <div class="sticky__block sticky__block--bg-chocolate">
+                BLOCK 1 -- Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus reiciendis voluptate
+                ducimus cum necessitatibus? Harum eum animi excepturi provident aperiam molestias repellendus blanditiis
+                unde quidem dolorum quia, sint necessitatibus? Dignissimos!
+              </div>
+              <div class="sticky__block sticky__block--bg-brown">
+                BLOCK 2 -- Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus reiciendis voluptate
+                ducimus cum necessitatibus? Harum eum animi excepturi provident aperiam molestias repellendus blanditiis
+                unde quidem dolorum quia, sint necessitatibus? Dignissimos!
+              </div>
+              <div class="sticky__block sticky__block--bg-grey">
+                BLOCK 3 -- Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus reiciendis voluptate
+                ducimus cum necessitatibus? Harum eum animi excepturi provident aperiam molestias repellendus blanditiis
+                unde quidem dolorum quia, sint necessitatibus? Dignissimos!
+              </div>
+            </div>
           </div>
-          <div class="battlefield__tank">
-            <img src="./img/tank.png" alt="" />
+        </section>
+
+        <section class="battlefield">
+          <div class="battlefield__container">
+            <div class="battlefield__background">
+              <img src="./img/battlefield.jpg" alt="Поле бою" />
+            </div>
+            <div class="battlefield__tank">
+              <img src="./img/tank.png" alt="" />
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>
